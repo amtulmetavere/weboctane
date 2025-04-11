@@ -53,11 +53,15 @@ const Footer = () => {
                                 className="p-2 bg-black rounded-full hover:scale-110 transition"
                                 whileHover={{ scale: 1.1 }}
                             >
-                                <Link to={icon.href} target="_blank" rel="noopener noreferrer">
-                                <a href={icon.link} key={index} target="_blank" rel="noopener noreferrer" className=" text-md">
-    {icon.icon}
-  </a>
-                                </Link>
+                                <a 
+        href={icon.link} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label={`Visit us on ${icon.alt}`}
+        className="text-md"
+      >
+        {icon.icon}
+      </a>
                             </motion.li>
                         ))}
                     </ul>
