@@ -106,7 +106,7 @@ function Home() {
   <Brands />
 
 
-      <GoogleReviewWidget />
+      
     
       <Teamscomp limit={4} />
       <Blogscomp limit={3} />
