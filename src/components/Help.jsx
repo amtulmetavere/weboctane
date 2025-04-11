@@ -84,7 +84,7 @@ loading="lazy"
                   {card.title}
                 </h2>
                 <p className="leading-relaxed text-center text-base text-gray-400 m-5">{card.description}</p>
-                <Link to={card.link}>
+                <Link to={card.link} aria-label={`Learn more about ${card.title}`}>
                   <motion.button
                     className="btn-8 lg:inline-flex items-center px-8 bg-[#ab8112] text-center text-white font-semibold rounded-xl border-0 py-2 focus:outline-none text-base mt-4 md:mt-0 hover:shadow-inner hover:shadow-[inset_0_2px_6px_rgba(0,0,0,0.4)] transition-shadow duration-300 hover:cursor-pointer hover:bg-[#70550b]"
                     whileHover={{ scale: 1.05 }}
