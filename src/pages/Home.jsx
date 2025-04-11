@@ -1,7 +1,7 @@
 import React from "react";
 import gradient from "../assets/bg.jpg";
 import About from '../components/About';
-import Brands from '../components/Brands';
+const Brands = React.lazy(() => import('./Brands'));
 import Help from '../components/Help';
 import Cta from '../components/Cta';
 import Cta2 from '../components/cta2';
@@ -102,7 +102,10 @@ function Home() {
        aria-label="Show More">
           Show More
           </motion.button>
-      <Brands />
+    <Suspense fallback={<Loader />}>
+  <Brands />
+</Suspense>
+
       <GoogleReviewWidget />
     
       <Teamscomp limit={4} />
