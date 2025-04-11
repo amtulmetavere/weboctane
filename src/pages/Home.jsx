@@ -1,7 +1,7 @@
 import React from "react";
 import gradient from "../assets/bg.jpg";
 import About from '../components/About';
-const Brands = React.lazy(() => import('./Brands'));
+const Brands = React.lazy(() => import('../components/Brands'));
 import Help from '../components/Help';
 import Cta from '../components/Cta';
 import Cta2 from '../components/cta2';
