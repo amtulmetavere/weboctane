@@ -102,7 +102,10 @@ function Home() {
        aria-label="Show More">
           Show More
           </motion.button>
-      <Brands />
+    
+  <Brands />
+
+
       <GoogleReviewWidget />
     
       <Teamscomp limit={4} />

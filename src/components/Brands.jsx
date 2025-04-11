@@ -14,6 +14,7 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 500,
+  lazyLoad: "ondemand",
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
