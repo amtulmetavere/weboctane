@@ -1,6 +1,10 @@
 import { useParams } from 'react-router-dom';
 import Footer from '../assets/webdevelopment.jpg';
 import { motion } from "framer-motion";
+import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
+import { FaRegLightbulb } from '@react-icons/all-files/fa/FaRegLightbulb';
+import { FiSettings } from '@react-icons/all-files/fi/FiSettings';
+import { FiCheckCircle } from '@react-icons/all-files/fi/FiCheckCircle';
 import Projects, { allCategories } from '../components/Projects'; 
 import wavelines from '../assets/wavelinesbg.png';
 const servicesData = {
@@ -8,42 +12,98 @@ const servicesData = {
         webdevelopment: {
             img: Footer,
           title: "Web Development",
-          description: "We craft responsive websites with modern technologies like React, Next.js, and Tailwind CSS.",
+          description: "Build fast, responsive, and scalable websites with modern stacks.",
             paragraph: "At Web Octane, we understand that your website is the face of your business. Our Web Development services are designed to give you a strong online presence that works for you. Whether you’re just starting out or looking to improve your existing site, we’re here to help.",
         },
         socialmedia: {
             img: Footer,
           title: "Social Media",
-          description: "We build strong brand presence through strategic social media campaigns and content creation.",
-           paragraph: "Our Social Media services at Web Octane are focused on creating meaningful engagement between your brand and your audience. From content planning to campaign execution, we ensure your business maintains a consistent and impactful presence across all platforms. Let us help you grow your following and turn engagement into conversions.",  
+          description: "Engage, inspire, and convert with strategic social media.",
+           paragraph: `Social Media has changed how brands communicate with their audiences forever. Whether your business is a B2B or B2C brand, social media is a powerful way to build brand awareness, build a positive image, and drive lead generation. We specialize in strategic social media campaigns that focus on building and protecting a positive brand image, creating loyalty among fans, and driving new leads for your business.
+
+           Our full suite of social media services include:
+           Social Strategy Development
+           Social Media Consulting / Social Media Advertising
+           Community Engagement
+           Search Engine Optimization`,  
         },
         searchengineoptimization: {
             img: Footer,
           title: "Search Engine Optimization",
-          description: "Boost your search engine rankings with our expert SEO strategies and technical audits.",
-         paragraph: "With Web Octane’s SEO services, your business won't get lost in the crowd. We perform comprehensive audits, keyword research, and on-page/off-page optimization to ensure your site ranks higher and drives organic traffic. Our strategies are designed to build long-term visibility and credibility with search engines.",
+          description: "Drive Targeted Traffic & Boost Rankings with Proven White-Hat SEO Strategies",
+          paragraph: `Billions of webs browsing sessions begin with a search query every day. 
+          With more than a billion websites competing for the top spot in search results, it can be difficult to drive traffic to your site from search engines.
+          
+          At Web Octane, we specialize in an innovative approach to SEO that uses white-hat tactics to put your website at the top of your target audience’s searches.
+
+          Our SEO services includes:
+          - Keyword Research
+          - Technical SEO
+          - Full SEO Audits
+          - SEO Consulting`,
+          
         },
         payperclick: {
             img: Footer,
           title: "Pay-Per-Click",
-          description: "Maximize your ROI with targeted PPC advertising on Google Ads, Facebook, and more.",
-         paragraph: "At Web Octane, our Pay-Per-Click advertising experts craft data-driven campaigns that deliver results. Whether you're targeting new customers or retargeting previous visitors, we fine-tune every aspect of your ads to ensure the highest return on investment. We manage campaigns across Google Ads, Facebook, Instagram, and more.",
+          description: "Ads that reach, convert, and deliver ROI.",
+         paragraph: `More than 80% of website traffic starts with a search engine query, Pay-Per-Click (PPC) puts your brand at the top of search results for queries relevant to your brand and audience. This valuable advertising real estate can provide an immediate source of targeted traffic to your website, driving conversions and contributing to revenue growth.
+
+         Our PPC services include:
+         PPC Strategy Development
+         PPC Research
+         Campaign Setup
+         PPC Campaigns
+         PPC Optimization
+         
+         At Web Octane, we have extensive experience leveraging PPC to drive growth for our clients. Our approach to PPC is data-driven, which allows us to deploy campaigns that focus on efficiency and constant improvement.`,
         },
         videoanddigitalcontent: {
             img: Footer,
           title: "Video and Digital Content",
-          description: "We produce engaging video and digital content to capture your audience’s attention.",
-         paragraph: "Content is king — and video rules the digital realm. At Web Octane, we create high-quality, engaging video and digital content tailored to your brand’s voice and audience. From promotional videos to explainer animations, our content captivates viewers and drives action across all digital platforms.",
+          description: "Captivating content that moves people to action.",
+         paragraph: `Content is the king of today’s marketing environment. The most successful brands in the world have developed detailed content strategies that help them inspire, entertain and educate their target audiences. At Web Octane, we specialize in helping our clients plan; produce and promote content that drives audience engagement and conversions.
+
+         Our full suite of content services includes:
+         Digital Content Strategy
+         Content Production
+         Video Production
+         Graphic Design
+         Multi-language Content
+         
+         Whether you’re producing blog posts, images, or videos, Web Octane can be trusted to support your content marketing efforts.`,
         },
         possystem: {
             img: Footer,
           title: "POS System",
           description: "We provide custom POS solutions tailored to streamline your business operations.",
-         paragraph: "Web Octane’s custom POS (Point of Sale) solutions are built to make your business operations faster, smarter, and more efficient. Whether you run a retail store, café, or service-based business, our systems are tailored to your workflow, helping you manage sales, inventory, and customer data with ease.",
+         paragraph: `The POS System may seem like just a tool to take orders and process payments, but it is so much more than that. A POS system can be thought of as the all-in-one motherboard of your business. Get a Cloud-Based POS Software to simplify & complete any transaction instantly with intuitive User-Interface, speed up your sales transaction and record all sales.`,
         }
       
       
 };
+const steps = [
+  {
+    icon: <FaSearch/>,
+    title: "Analyze",
+    desc: "We start by thoroughly understanding your brand to ensure your website meets your goals.",
+  },
+  {
+    icon: <FaRegLightbulb/>,
+    title: "Plan",
+    desc: "We develop a clear, customized plan to make your website both search-friendly and easy to use.",
+  },
+  {
+    icon: <FiSettings/>,
+    title: "Create",
+    desc: "Our team carefully builds your website, focusing on quality and impactful for your business.",
+  },
+  {
+    icon: <FiCheckCircle/>,
+    title: "Deliver",
+    desc: "We launch your website with full testing and support to ensure everything runs smoothly.",
+  },
+];
 
 const ServicesDetails = () => {
   const { serviceSlug } = useParams(); 
@@ -55,7 +115,7 @@ const ServicesDetails = () => {
 
 
   const projects = allCategories[serviceSlug] || []; 
-
+  
   return (
     <div className="min-h-screen p-10 bg-black text-white text-center">
       <section className="text-gray-400 body-font overflow-hidden">
@@ -80,13 +140,46 @@ loading="lazy"
                 <div className="w-[50%] h-1 rounded-full bg-[#e3b843] inline-flex mb-4"></div>
               </div></div>
               <p className="leading-relaxed w-[90%] text-start">
-                 {service.paragraph}
+              {service.paragraph.split('\n').map((line, i) => (
+    <span key={i}>{line}<br/></span>
+  ))}
                    </p>
             </div>
           </div>
         </div>
       </section>
 
+      <div className="w-11/12 m-9 justify-self-center rounded-4xl bg-[#1A1A1A] py-14 px-4 text-white text-center">
+     <div className="text-center mb-10">
+      <h2 className="text-sm title-font text-gray-500 font-medium tracking-widest uppercase">Our Impact</h2>
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4 capitalize">Driving Results Through Innovation</h1>
+      
+        <div className="flex mt-6 justify-center">
+          <div className="w-16 h-1 rounded-full bg-[#e3b843] inline-flex"></div>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+           <div className="bg-[#000] p-8 rounded-xl relative shadow-lg">
+           <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+             <div className="relative w-16 h-16">
+              
+               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                 <div className="bg-[#e3b843] w-12 h-12 flex items-center justify-center rounded-full shadow-lg text-black">
+                   {step.icon}
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div className="mt-8">
+            
+             <h3 className="text-lg font-semibold mt-1 mb-2 text-white">{step.title}</h3>
+             <p className="text-sm text-gray-400">{step.desc}</p>
+           </div>
+         </div>
+        ))}
+      </div>
+    </div>
       
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">

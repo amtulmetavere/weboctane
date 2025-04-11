@@ -1,6 +1,5 @@
-import React from 'react'
-import Projects from "../components/Projects";
-
+import React, { Suspense } from "react";
+import Projects from '../components/Projects';
 import Cta from '../components/Cta';
 import GoogleReviewWidget from '../components/GoogleReviewWidget'; 
 
@@ -9,6 +8,7 @@ const Ourprojects = () => {
     <div>
      
         <Projects />
+      
       <Cta />
        <GoogleReviewWidget />
     </div>

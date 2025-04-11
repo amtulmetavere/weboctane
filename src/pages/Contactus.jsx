@@ -1,6 +1,14 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaClock } from 'react-icons/fa';
-import { FaFacebookF, FaWhatsapp, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; 
+import { FaMapMarkerAlt } from '@react-icons/all-files/fa/FaMapMarkerAlt';
+import { FaEnvelope } from '@react-icons/all-files/fa/FaEnvelope';
+import { FaPhoneAlt } from '@react-icons/all-files/fa/FaPhoneAlt';
+import { FaClock } from '@react-icons/all-files/fa/FaClock';
+
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF';
+import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+
 import Cta2 from '../components/cta2';
 import { motion } from 'framer-motion'; 
 const contacts = [

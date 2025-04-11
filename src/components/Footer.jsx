@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 import Logo from "../assets/logo.png";
 import footerbg from "../assets/footer-bg-1.png";
 import newsletter from "../assets/newsletterbox.jpg";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import {FaFacebookF} from '@react-icons/all-files/fa/FaFacebookF';
+import {FaLinkedinIn} from '@react-icons/all-files/fa/FaLinkedinIn';
+import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram';
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter';
 const socialIcons = [
  { icon: <FaFacebookF />, alt: "Facebook", link: "https://facebook.com/weboctane" },
        { icon: <FaLinkedinIn />, alt: "LinkedIn", link: "https://linkedin.com/in/weboctane" },

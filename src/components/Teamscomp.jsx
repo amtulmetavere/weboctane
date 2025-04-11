@@ -1,7 +1,10 @@
 import React from 'react'
 import Team1 from '../assets/team1.jpg'
 import Team2 from '../assets/team2.jpg'
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import {FaFacebookF} from '@react-icons/all-files/fa/FaFacebookF';
+import {FaLinkedinIn} from '@react-icons/all-files/fa/FaLinkedinIn';
+import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram';
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter';
 
 const galleryItems = [
   {
@@ -154,31 +157,39 @@ loading="lazy"
 
 <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
           
-            <div className="px-8 py-2  relative z-10 w-full opacity-100 rounded-t-[40px] group-hover:bg-black group-hover:opacity-100 transform translate-y-90 group-hover:translate-y-4 transition-all duration-500 ease-in-out">
+            <div className="px-4 py-2  relative z-10 w-full opacity-100 rounded-t-[40px] group-hover:bg-black group-hover:opacity-100 transform translate-y-90 group-hover:translate-y-4 transition-all duration-500 ease-in-out">
             
-              <h1 className="bottom-0 relative title-font text-4xl font-bold text-white mb-3">
+              <h1 className="bottom-0 relative title-font md:text-2xl lg:text-3xl text-xl font-bold text-white mb-2">
                 {item.title}
               </h1>
               <h2 className="bottom-0 relative tracking-widest text-sm title-font font-medium text-gray-400 mb-1">
                 {item.subtitle}
               </h2>
 
-              <div className=" py-10 relative z-10 w-full opacity-0 group-hover:opacity-100 transform translate-y-10 group-hover:translate-y-4 transition-all duration-500 ease-in-out"> 
-              <p className="leading-relaxed">
-              {item.description.substring(0, 100)}...
+              <div className="py-1 relative z-10 w-full max-w-[400px] sm:max-w-[600px] mx-auto opacity-0 group-hover:opacity-100 transform translate-y-10 group-hover:translate-y-4 transition-all duration-500 ease-in-out">
+  <p className="leading-relaxed text-xs sm:text-base md:text-md text-ellipsis overflow-hidden break-words">
+    {item.description}
+  </p>
 
-              </p>
-              <ul className="flex items-center pt-3 gap-4">
-              {item.socials.map((social, index) => (
-  <li key={index} className="p-2 bg-white flex align-center rounded-full hover:scale-110 text-black cursor-pointer hover:text-gray-400 transition">
-   <a href={social.link} key={index} target="_blank" rel="noopener noreferrer" className=" text-md">
-    {social.icon}
-  </a>
-  </li>
-))}
+  <ul className="flex flex-wrap items-center pt-2 gap-2">
+    {item.socials.map((social, index) => (
+      <li
+        key={index}
+        className="p-2 bg-white flex items-center justify-center rounded-full hover:scale-110 text-black cursor-pointer hover:text-gray-400 transition"
+      >
+        <a
+          href={social.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-md"
+        >
+          {social.icon}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
-                    </ul>
-            </div>
             </div>
           </div>
         </div>

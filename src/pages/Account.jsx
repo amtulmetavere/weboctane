@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import {
-  FaFacebook,
-  FaGoogle,
-  FaGithub,
-  FaLinkedin
-} from 'react-icons/fa';
-import {
-  FiUserPlus,
-  FiLogIn,
-  FiArrowRightCircle,
-  FiArrowLeftCircle
-} from 'react-icons/fi';
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
+import { FaGoogle } from '@react-icons/all-files/fa/FaGoogle';
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
+
+import { FiUserPlus } from '@react-icons/all-files/fi/FiUserPlus';
+import { FiLogIn } from '@react-icons/all-files/fi/FiLogIn';
+import { FiArrowRightCircle } from '@react-icons/all-files/fi/FiArrowRightCircle';
+import { FiArrowLeftCircle } from '@react-icons/all-files/fi/FiArrowLeftCircle';
+
 
 import currentHero from "../assets/img1.jpg";
 

@@ -3,13 +3,11 @@ import { useLocation } from 'react-router-dom';
 
 import { motion } from 'framer-motion';  
 import newsletter from "../assets/newsletterbox.jpg";
-import parse from 'html-react-parser';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaLinkedinIn,
-} from 'react-icons/fa';
+
+import {FaFacebookF} from "@react-icons/all-files/fa/FaFacebookF";
+import {FaLinkedinIn} from "@react-icons/all-files/fa/FaLinkedinIn";
+import {FaInstagram} from "@react-icons/all-files/fa/FaInstagram";
+import {FaWhatsapp} from "@react-icons/all-files/fa/FaWhatsapp";
 
 const Blogsdetails = () => {
   const location = useLocation();

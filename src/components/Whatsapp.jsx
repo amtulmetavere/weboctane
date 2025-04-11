@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaCommentDots } from 'react-icons/fa6'; 
+import {FaWhatsapp} from '@react-icons/all-files/fa/FaWhatsapp';
+import { FaCommentDots } from '@react-icons/all-files/fa/FaCommentDots';
 
 const Whatsapp = () => {
   const phoneNumber = "+923330209200";

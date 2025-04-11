@@ -295,10 +295,10 @@ const Projects = ({ limit }) => {
                 <img
 loading="lazy"
                   alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  className="absolute inset-0 w-[450px] h-full object-cover object-center"
                   src={item.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition duration-500">
+                <div className="px-8 py-10 relative z-10 w-[450px] border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition duration-500">
                   <h2 className="tracking-widest text-sm title-font font-medium text-[#e3b843] mb-1">
                     {item.subtitle}
                   </h2>

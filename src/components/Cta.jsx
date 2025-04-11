@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { FaHandshake} from "react-icons/fa";
-import { IoTime } from "react-icons/io5";
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { TbTruckDelivery } from "react-icons/tb";
+import { FaHandshake} from "@react-icons/all-files/fa/FaHandshake";
+import { IoTime } from "@react-icons/all-files/io5/IoTime";
+import { BiSupport } from "@react-icons/all-files/bi/BiSupport";
+import { Truck } from 'lucide-react';
+
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const AnimatedStatCard = ({ icon, value, label, desc, delay = 0 }) => {
@@ -98,7 +99,7 @@ const Cta = () => {
       desc: "Top-rated by over 250 global clients",
     },
     {
-      icon: <TbTruckDelivery className="text-black text-2xl" aria-label="delivery icon" />,
+       icon: <Truck className="text-black text-2xl" aria-label="delivery icon" />,
       value: "95",
       label: "Delivery",
       desc: "95% on-time, on-budget project success",
@@ -110,7 +111,7 @@ const Cta = () => {
       desc: "Enterprise-grade 99.99% uptime guarantee",
     },
     {
-      icon: <MdOutlineSupportAgent className="text-black text-2xl" aria-label="support icon"/>,
+       icon: <BiSupport className="text-black text-2xl" aria-label="support icon"/>,
       value: "90",
       label: "Support",
       desc: "4.9/5 average support satisfaction score",

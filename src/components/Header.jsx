@@ -157,7 +157,7 @@ useEffect(() => {
         initial={{ x: "-100%" }}
         animate={{ x: open ? "0%" : "-100%" }}
         transition={{ type: "spring", stiffness: 200, damping: 30 }}
-        className={`fixed top-0 right-0 w-full backdrop-blur-sm bg-white/40 shadow-lg flex flex-col h-full flex flex-col lg:justify-between justify-center space-y-6 text-lg p-8 xl:hidden z-50 ${open ? "block" : "hidden"}`}
+        className={`fixed top-0 right-0 w-full backdrop-blur-sm bg-white/40 shadow-lg flex flex-col h-full flex flex-col lg:justify-between justify-center space-y-6 text-lg p-8  xl:hidden z-50 ${open ? "block" : "hidden"}`}
       >
         {["Home", "About Us" ].map((item) => (
         
