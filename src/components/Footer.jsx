@@ -10,7 +10,7 @@ import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram';
 import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter';
 const socialIcons = [
  { icon: <FaFacebookF />, alt: "Facebook", link: "https://facebook.com/weboctane" },
-       { icon: <FaLinkedinIn />, alt: "LinkedIn", link: "https://linkedin.com/in/weboctane" },
+       { icon: <FaLinkedinIn />, alt: "LinkedIn", link: "https://www.linkedin.com/company/weboctanepk" },
        { icon: <FaInstagram />, alt: "Instagram", link: "https://instagram.com/weboctane" },
        { icon: <FaTwitter />, alt: "Twitter", link: "https://twitter.com/weboctane" },
 ];
