@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Help from '../components/Help';
 import Footer from '../assets/footer-bg-1.png';
 import GoogleReviewWidget from '../components/GoogleReviewWidget'; 
-import Cta2 from '../components/Cta2';
+import Cta2 from '../components/cta2';
 
 const Services = () => {
   
