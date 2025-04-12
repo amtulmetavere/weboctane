@@ -140,7 +140,7 @@ loading="lazy"
       </div>
       <div className="w-full lg:w-1/2">
         <div className="lg:max-w-xl">
-          <div className="mb-6">
+          <div className="mb-4 flex flex-col items-center lg:items-start gap-3">
             <h6 className="text-lg text-center font-medium text-[#e3b843]  lg:text-left uppercase">
             Why Choose Us?
             </h6>
