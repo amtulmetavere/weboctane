@@ -6,7 +6,7 @@ import Cta from "../components/Cta";
 import About from '../components/About';
 import Cta2 from '../components/Cta2';
 import Brands from "../components/Brands";
-import bulb from "../assets/bulb.png";
+
 
 
 const faqs = [
