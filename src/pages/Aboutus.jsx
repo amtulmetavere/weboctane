@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import about from "../assets/about.jpg";
 import Cta from "../components/Cta";
 import About from '../components/About';
-import Cta2 from '../components/cta2';
+import Cta2 from '../components/Cta2';
 import Brands from "../components/Brands";
 
 
