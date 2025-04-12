@@ -128,21 +128,22 @@ loading="lazy"
         </div>
       </section>
     
-      <section className="py-24">
+  <section className="py-24">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full">
-      <div className="w-full lg:w-1/2 border-2 border-[#e3b843] rounded-xl">
+    <div className="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 xl:flex-row xl:justify-between max-lg:max-w-2xl mx-auto max-w-full">
+      <div className="w-full xl:w-1/2 border-2 border-[#e3b843] rounded-xl">
         <img
          src={about}
           alt="why to choose weboctane"
           className="w-full rounded-xl object-cover p-8"
         />
       </div>
-      <div className="w-full lg:w-1/2">
-        <div className="lg:max-w-xl">
-          <div className="mb-4 flex flex-col items-center lg:items-start gap-3">
+      <div className="w-full xl:w-1/2">
+        <div className="">
+          <div className="mb-6 flex flex-col items-center lg:items-start gap-3">
             <h6 className="text-lg text-center font-medium text-[#e3b843]  lg:text-left uppercase">
             Why Choose Us?
+           
             </h6>
             <div className="w-16 h-1 rounded-full bg-[#e3b843] inline-flex mb-2"></div>
             <h2 className="text-lg text-center text-white  lg:text-left">
@@ -161,7 +162,7 @@ loading="lazy"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="accordion-toggle group inline-flex items-center justify-between text-start w-full text-lg font-normal leading-8 text-gray-300 transition duration-500 hover:text-[#e3b843]"
+                  className="accordion-toggle group inline-flex items-center text-start justify-between w-full text-lg font-normal leading-8 text-gray-300 transition duration-500 hover:text-[#e3b843]"
                 >
                   <h5>{faq.question}</h5>
                   <svg
