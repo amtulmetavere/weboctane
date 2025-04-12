@@ -80,7 +80,7 @@ loading="lazy"
                     alt={card.title}
                   />
                 </div>
-                <h2 className="text-xl text-white font-bold title-font mb-2">
+                <h2 className="text-xl text-white font-bold text-center title-font mb-2">
                   {card.title}
                 </h2>
                 <p className="leading-relaxed text-center text-base text-gray-400 m-5">{card.description}</p>
