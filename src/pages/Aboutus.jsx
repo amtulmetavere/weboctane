@@ -161,7 +161,7 @@ loading="lazy"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="accordion-toggle group inline-flex items-center justify-between w-full text-lg font-normal leading-8 text-gray-300 transition duration-500 hover:text-[#e3b843]"
+                  className="accordion-toggle group inline-flex items-center justify-between text-start w-full text-lg font-normal leading-8 text-gray-300 transition duration-500 hover:text-[#e3b843]"
                 >
                   <h5>{faq.question}</h5>
                   <svg
