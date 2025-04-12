@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import about from "../assets/about.jpg";
 import Cta from "../components/Cta";
 import About from '../components/About';
-
-import { ArrowUpRight } from 'lucide-react';
 import Brands from "../components/Brands";
 
 const AboutUs = () => {
@@ -67,7 +65,7 @@ loading="lazy"
                   Build Bold Brands <br /> with <span className="text-[#aa82f3]">WebOctane</span>.
                 </h2>
                 <button aria-label='next' className="mt-4 w-10 h-10 bg-[#e3b843] hover:bg-yellow-500 rounded-full flex items-center justify-center transition duration-300">
-                  <ArrowUpRight className="text-black" />
+                
                 </button>
               </div>
             </div>
@@ -84,7 +82,7 @@ loading="lazy"
                 </p>
               </div>
               <button aria-label='next' className="mt-4 w-10 h-10 bg-black hover:bg-[#e3b843] hover:text-black text-white rounded-full flex items-center justify-center transition duration-300">
-                <ArrowUpRight />
+              
               </button>
             </div>
           </div>
@@ -109,7 +107,7 @@ loading="lazy"
                 </p>
               </div>
               <button aria-label='next' className="mt-6 w-12 h-12 bg-[#e3b843] hover:bg-yellow-500 text-black rounded-full flex items-center justify-center transition duration-300">
-                <ArrowUpRight />
+               
               </button>
             </div>
           </div>
