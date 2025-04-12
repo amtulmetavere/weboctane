@@ -7,9 +7,7 @@ import About from '../components/About';
 import Brands from "../components/Brands";
 
 const AboutUs = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+ 
 
   const progressItems = [
     { title: 'Digital Marketing', percent: 91, color: '#facc15' },
@@ -64,9 +62,7 @@ loading="lazy"
                 <h2 className="text-2xl font-bold leading-snug">
                   Build Bold Brands <br /> with <span className="text-[#aa82f3]">WebOctane</span>.
                 </h2>
-                <button aria-label='next' className="mt-4 w-10 h-10 bg-[#e3b843] hover:bg-yellow-500 rounded-full flex items-center justify-center transition duration-300">
                 
-                </button>
               </div>
             </div>
 
@@ -81,9 +77,7 @@ loading="lazy"
                   We build lasting impressions through creativity, consistency, and care.
                 </p>
               </div>
-              <button aria-label='next' className="mt-4 w-10 h-10 bg-black hover:bg-[#e3b843] hover:text-black text-white rounded-full flex items-center justify-center transition duration-300">
-              
-              </button>
+           >
             </div>
           </div>
 
@@ -106,9 +100,7 @@ loading="lazy"
                   purposeful design, powerful development, and precise marketing strategies.
                 </p>
               </div>
-              <button aria-label='next' className="mt-6 w-12 h-12 bg-[#e3b843] hover:bg-yellow-500 text-black rounded-full flex items-center justify-center transition duration-300">
-               
-              </button>
+              
             </div>
           </div>
         </div>
