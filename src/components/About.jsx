@@ -2,14 +2,9 @@ import React, { useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import about from "../assets/about.jpg";
 import { ArrowUpRight } from 'lucide-react';
-
+import { useNavigate,Link } from 'react-router-dom';
 const About = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", 
-    });
-  };
+  const navigate = useNavigate();
 
   const items = useMemo(() => [
     { title: "Brand Strategy" },
@@ -22,6 +17,15 @@ const About = () => {
     { title: "Brand Monitoring" },
   ], []);
 
+  const handleAbout = () => {
+  
+   
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  navigate('/aboutus'); 
+};
   return (
     <section className="text-gray-400 body-font overflow-hidden">
       <div className="container px-4 py-14 mx-auto">
@@ -45,14 +49,18 @@ loading="lazy"
               className="w-full h-full object-cover rounded-xl"
              
             />
-            <div className="absolute top-0 right-0 w-25 h-25 rounded-xl bg-[#000000] flex justify-center items-center -mt-2 -mr-2">
+           <div className="absolute top-0 right-0 w-25 h-25 rounded-xl bg-[#000000] flex justify-center items-center -mt-2 -mr-2">
+               
               <div
                 className="absolute bg-white w-20 h-20 rounded-xl flex justify-center items-center -mt-2 -mr-2 hover:cursor-pointer transition duration-300 hover:bg-[#e3b843]"
-                onClick={scrollToTop}
+                onClick={handleAbout}
               >
                 <ArrowUpRight size={50} color="#1A1A1A" />
+               
               </div>
+             
             </div>
+          
           </motion.div>
 
          
